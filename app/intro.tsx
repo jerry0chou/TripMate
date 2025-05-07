@@ -61,7 +61,7 @@ export default function Intro() {
                     <View 
                         key={slide.id} 
                         style={{ width }}
-                        className="flex-1"
+                        className=""
                     >
                         <View className="flex-1 items-center justify-center bg-blue-500 py-10">
                             <Image 

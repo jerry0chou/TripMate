@@ -5081,7 +5081,7 @@ metro-transform-worker@0.82.3:
     metro-transform-plugins "0.82.3"
     nullthrows "^1.1.1"
 
-metro@0.82.3, metro@^0.82.0:
+metro@0.82.3, metro@^0.82.0, metro@^0.82.3:
   version "0.82.3"
   resolved "https://registry.yarnpkg.com/metro/-/metro-0.82.3.tgz#d25137f05faceb32783b41bbe3698d4903e74792"
   integrity sha512-EfSLtuUmfsGk3znJ+zoN8cRLniQo3W1wyA+nJMfpTLdENfbbPnGRTwmKhzRcJIUh9jgkrrF4oRQ5shLtQ2DsUw==
@@ -5239,7 +5239,7 @@ napi-postinstall@^0.2.2:
   resolved "https://registry.yarnpkg.com/napi-postinstall/-/napi-postinstall-0.2.3.tgz#700171c0b4bd8226124d72d599046ccd1a1174ba"
   integrity sha512-Mi7JISo/4Ij2tDZ2xBE2WH+/KvVlkhA6juEjpEeRAVPNCpN3nxJo/5FhDNKgBcdmcmhaH6JjgST4xY/23ZYK0w==
 
-nativewind@^4.1.23:
+nativewind@4.1.23:
   version "4.1.23"
   resolved "https://registry.yarnpkg.com/nativewind/-/nativewind-4.1.23.tgz#badfa94a5cd2e12ff8971dd274d234cd843ca74e"
   integrity sha512-oLX3suGI6ojQqWxdQezOSM5GmJ4KvMnMtmaSMN9Ggb5j7ysFt4nHxb1xs8RDjZR7BWc+bsetNJU8IQdQMHqRpg==
@@ -5823,9 +5823,9 @@ rc@~1.2.7:
     strip-json-comments "~2.0.1"
 
 react-devtools-core@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-6.1.1.tgz#7dac74773d039273134c360f8b65cf4f6c795c49"
-  integrity sha512-TFo1MEnkqE6hzAbaztnyR5uLTMoz6wnEWwWBsCUzNt+sVXJycuRJdDqvL078M4/h65BI/YO5XWTaxZDWVsW0fw==
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-6.1.2.tgz#bf4030c4012be8a9201dc1f8a36238c9a5078c98"
+  integrity sha512-ldFwzufLletzCikNJVYaxlxMLu7swJ3T2VrGfzXlMsVhZhPDKXA38DEROidaYZVgMAmQnIjymrmqto5pyfrwPA==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"

@@ -12,7 +12,7 @@ export default function Auth() {
 
     }
     return (
-        <View className="relative flex-1 bg-blue-500">
+        <View className="relative  bg-blue-500">
             <View className="flex items-center justify-center">
                 <Image className="size-[400px] " source={require("../assets/auth/sign_in.png")} resizeMode={"contain"} />
             </View>
