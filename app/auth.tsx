@@ -5,11 +5,12 @@ import { useState } from "react";
 
 export default function Auth() {
     const router = useRouter();
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handlePress = async () => {
         Keyboard.dismiss();
+        router.replace('/(tabs)')
     }
     return (
         <KeyboardAvoidingView
@@ -20,20 +21,36 @@ export default function Auth() {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View className="flex-1">
                     <View className="h-[30%] bg-blue-500">
-                        <Image
+                        {isLogin? <Image
                             className="w-full h-full"
                             source={require("../assets/auth/sign_in.png")}
                             resizeMode="contain"
+                        />: <Image
+                            className="w-full h-full"
+                            source={require("../assets/auth/sign_up.png")}
+                            resizeMode="contain"
                         />
+                        }
                     </View>
 
                     {/* Bottom white section */}
                     <View className="flex-1 bg-white rounded-t-[24px] -mt-5 py-8 px-8">
                         <View className="w-full">
-                            <Text className="text-3xl font-bold">Login</Text>
-                            <Text className="pt-4 pb-8">Please enter a valid account</Text>
+                            <Text className="text-3xl font-bold">{isLogin? 'Login': 'Register'}</Text>
+                            <Text className="pt-4 pb-8">{isLogin?'Please enter a valid account': 'Create an account ' }</Text>
                         </View>
                         <View className="w-full">
+                            {
+                                !isLogin && <>
+                                        <Text className="text-base mb-2 font-medium">Name</Text>
+                                        <TextInput
+                                            className="h-12 border border-gray-300 w-full mb-6 px-4 rounded-full"
+                                            placeholder="username"
+                                            value={email}
+                                            onChangeText={setEmail}
+                                        />
+                                    </>
+                            }
                             <Text className="text-base mb-2 font-medium">Email</Text>
                             <TextInput
                                 className="h-12 border border-gray-300 w-full mb-6 px-4 rounded-full"
@@ -59,6 +76,15 @@ export default function Auth() {
                                 {isLogin ? "Login" : "Register"}
                             </Text>
                         </TouchableOpacity>
+                        <View className="flex flex-row items-center justify-center my-6">
+                            <View className="h-[1px]  bg-gray-500 flex-grow"></View>
+                            <Text className="mx-4 text-sm font-medium text-gray-500">OR</Text>
+                            <View className="h-[1px] bg-gray-500 flex-grow"></View>
+                        </View>
+                        <View className="flex flex-row items-center justify-center">
+                            <Text className="text-sm text-gray-500 mr-1">{isLogin ? 'Do not have an account?' : 'Have an account?'} </Text>
+                            <Text className="underline" onPress={()=> setIsLogin(!isLogin)}>{isLogin ? "Register" : "Login"}</Text>
+                        </View>
                     </View>
                 </View>
             </TouchableWithoutFeedback>

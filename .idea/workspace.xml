@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="adjust auth layout">
+    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add keyboard behavior">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
       <workItem from="1746150636187" duration="5036000" />
       <workItem from="1746392902940" duration="19651000" />
       <workItem from="1746635582431" duration="6337000" />
-      <workItem from="1746910968928" duration="2893000" />
+      <workItem from="1746910968928" duration="4536000" />
     </task>
     <task id="LOCAL-00001" summary="remove redundancies">
       <option name="closed" value="true" />
@@ -166,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746913566582</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add keyboard behavior">
+      <option name="closed" value="true" />
+      <created>1746913968545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746913968545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="adjust classname" />
     <MESSAGE value="remove unnecessary code" />
     <MESSAGE value="adjust auth layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust auth layout" />
+    <MESSAGE value="add keyboard behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="add keyboard behavior" />
   </component>
 </project>
