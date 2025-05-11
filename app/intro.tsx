@@ -13,19 +13,19 @@ export default function Intro() {
             id: 1,
             image: require("../assets/intro/plan.png"),
             title: "Plan Your Trip",
-            description: "Create your dream trip with ease. Choose a destination."
+            description: "Create your dream trip with ease. Choose a destination. find the perfect place to stay, and create an itinerary that suits your preferences"
         },
         {
             id: 2,
             image: require("../assets/intro/trip.png"),
             title: "Get the Best Deal",
-            description: "Save time and money by finding the best travel deals."
+            description: "Save time and money by finding the best travel deals. We provide a range of exclusive promotions and discounts to make your trip more affordable"
         },
         {
             id: 3,
             image: require("../assets/intro/explore.png"),
             title: "Explore Local Attractions",
-            description: "Discover the beauty of local places you may never have visited."
+            description: "Discover the beauty of local places you may never have visited. Experience local life and enjoy authentic experiences in each destination"
         }
     ];
 
