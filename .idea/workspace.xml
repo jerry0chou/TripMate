@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="complete auth module">
+    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add description">
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/notification.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/wishlist.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/TabBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +102,7 @@
       <workItem from="1746150636187" duration="5036000" />
       <workItem from="1746392902940" duration="19651000" />
       <workItem from="1746635582431" duration="6337000" />
-      <workItem from="1746910968928" duration="6605000" />
+      <workItem from="1746910968928" duration="9466000" />
     </task>
     <task id="LOCAL-00001" summary="remove redundancies">
       <option name="closed" value="true" />
@@ -188,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746915599910</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add description">
+      <option name="closed" value="true" />
+      <created>1746999199806</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746999199806</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +242,7 @@
     <MESSAGE value="adjust auth layout" />
     <MESSAGE value="add keyboard behavior" />
     <MESSAGE value="complete auth module" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete auth module" />
+    <MESSAGE value="add description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add description" />
   </component>
 </project>

@@ -1,6 +1,8 @@
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import '../global.css';
+
 export default function Layout() {
 
   const [loaded] = useFonts({
@@ -12,10 +14,14 @@ export default function Layout() {
     return null;
   }
 
-    return   <Stack>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="intro" options={{ headerShown: false }} />
-        <Stack.Screen name="auth" options={{ headerShown: false }} />
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    </Stack>
+    return (
+      <SafeAreaProvider>
+        <Stack>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="intro" options={{ headerShown: false }} />
+          <Stack.Screen name="auth" options={{ headerShown: false }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+      </SafeAreaProvider>
+    );
 }
