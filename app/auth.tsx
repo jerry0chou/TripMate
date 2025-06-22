@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Auth() {
     const router = useRouter();
     const [isLogin, setIsLogin] = useState(false);
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handlePress = async () => {
@@ -46,8 +47,8 @@ export default function Auth() {
                                         <TextInput
                                             className="h-12 border border-gray-300 w-full mb-6 px-4 rounded-full"
                                             placeholder="username"
-                                            value={email}
-                                            onChangeText={setEmail}
+                                            value={name}
+                                            onChangeText={setName}
                                         />
                                     </>
                             }
