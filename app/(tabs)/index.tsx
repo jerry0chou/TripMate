@@ -1,8 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
+import AntDesign from '@expo/vector-icons/AntDesign';
 import React from 'react';
 import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import AntDesign from '@expo/vector-icons/AntDesign';
 export default function Home() {
     const insets = useSafeAreaInsets();
 
