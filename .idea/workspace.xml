@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add home layout">
+    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,6 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "npm.ios.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/jerry/Documents/CodeSpace/WebSpace/TripMate/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,8 +99,7 @@
       <workItem from="1746150636187" duration="5036000" />
       <workItem from="1746392902940" duration="19651000" />
       <workItem from="1746635582431" duration="6337000" />
-      <workItem from="1746910968928" duration="10711000" />
-      <workItem from="1750556066027" duration="4223000" />
+      <workItem from="1746910968928" duration="9466000" />
     </task>
     <task id="LOCAL-00001" summary="remove redundancies">
       <option name="closed" value="true" />
@@ -198,23 +197,7 @@
       <option name="project" value="LOCAL" />
       <updated>1746999199806</updated>
     </task>
-    <task id="LOCAL-00013" summary="add tabs">
-      <option name="closed" value="true" />
-      <created>1747003829237</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1747003829237</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add home layout">
-      <option name="closed" value="true" />
-      <created>1750559349597</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1750559349597</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,8 +240,6 @@
     <MESSAGE value="add keyboard behavior" />
     <MESSAGE value="complete auth module" />
     <MESSAGE value="add description" />
-    <MESSAGE value="add tabs" />
-    <MESSAGE value="add home layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="add description" />
   </component>
 </project>
