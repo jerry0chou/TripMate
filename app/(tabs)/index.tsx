@@ -57,6 +57,30 @@ export default function Home() {
         }
     ];
 
+    const articles = [
+        {
+            id: 1,
+            title: "Merapi Mountain erupts again",
+            author: "Adams",
+            date: "9 Dec 2023",
+            image: "merapi_article"
+        },
+        {
+            id: 2,
+            title: "Fun vacation in Bromo",
+            author: "Adams",
+            date: "15 Dec 2023",
+            image: "bromo_article"
+        },
+        {
+            id: 3,
+            title: "A guide to hiking Semeru",
+            author: "Jane Doe",
+            date: "18 Dec 2023",
+            image: "semeru_article"
+        }
+    ];
+
     return (
         <View className="flex-1 bg-gray-50" style={{paddingTop: insets.top}}>
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 120 }}>
@@ -126,7 +150,7 @@ export default function Home() {
                     </View>
 
                     {/* Recommended */}
-                    <View>
+                    <View className="mb-6">
                         <View className="flex-row justify-between items-center mb-4">
                             <Text className="text-xl font-bold">Recommended</Text>
                             <TouchableOpacity>
@@ -161,6 +185,40 @@ export default function Home() {
                                 </TouchableOpacity>
                             ))}
                         </View>
+                    </View>
+
+                    {/* Article */}
+                    <View className="mt-6">
+                        <View className="flex-row justify-between items-center mb-4">
+                            <Text className="text-xl font-bold">Article</Text>
+                            <TouchableOpacity>
+                                <Text className="text-blue-500">See all</Text>
+                            </TouchableOpacity>
+                        </View>
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false} className="-ml-6">
+                            <View className="flex-row pl-6 gap-4">
+                                {articles.map(article => (
+                                    <TouchableOpacity 
+                                        key={article.id} 
+                                        className="bg-white rounded-3xl p-3 w-64 mb-4" 
+                                        style={{ 
+                                            elevation: 3, 
+                                            shadowColor: '#000000',
+                                            shadowOpacity: 0.1, 
+                                            shadowRadius: 10, 
+                                            shadowOffset: { width: 0, height: 5 }
+                                        }}
+                                    >
+                                        <Image source={{ uri: `https://picsum.photos/seed/${article.image}/400/300` }} className="w-full h-32 rounded-lg bg-gray-200" />
+                                        <View className="mt-3">
+                                            <Text className="text-lg font-bold" numberOfLines={2}>{article.title}</Text>
+                                            <Text className="text-gray-500 mt-1">{article.author}</Text>
+                                            <Text className="text-gray-400 text-xs mt-2">{article.date}</Text>
+                                        </View>
+                                    </TouchableOpacity>
+                                ))}
+                            </View>
+                        </ScrollView>
                     </View>
                 </View>
             </ScrollView>
