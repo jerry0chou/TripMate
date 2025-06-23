@@ -1,10 +1,13 @@
 import { Ionicons } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
 export default function Home() {
     const insets = useSafeAreaInsets();
+    const router = useRouter();
 
     const popular_nearby = [
         {
@@ -94,7 +97,11 @@ export default function Home() {
                         <ScrollView horizontal showsHorizontalScrollIndicator={false} className="-ml-6">
                             <View className="flex-row pl-6 gap-2 space-x-4">
                                 {popular_nearby.map(item => (
-                                    <TouchableOpacity key={item.id} className="w-64 h-80 rounded-3xl overflow-hidden">
+                                    <TouchableOpacity 
+                                        key={item.id} 
+                                        className="w-64 h-80 rounded-3xl overflow-hidden"
+                                        onPress={() => router.push({ pathname: '/detail_trip', params: { name: item.name, location: item.location, rating: item.rating, category: item.category }})}
+                                    >
                                         <Image source={{ uri: `https://picsum.photos/seed/${item.name}/400/600` }} className="w-full h-full absolute" />
                                         <View className="absolute top-4 left-4 bg-white/90 rounded-full px-3 py-1">
                                             <Text className="font-semibold">{item.category}</Text>
@@ -128,7 +135,12 @@ export default function Home() {
                         </View>
                         <View className="space-y-4 gap-2">
                             {recommended.map(item => (
-                                <TouchableOpacity key={item.id} className="flex-row bg-white rounded-3xl p-3 items-center" style={{ elevation: 2, shadowColor: '#000', shadowOpacity: 0.1, shadowRadius: 5, shadowOffset: { width: 0, height: 2 }}}>
+                                <TouchableOpacity 
+                                    key={item.id} 
+                                    className="flex-row bg-white rounded-3xl p-3 items-center" 
+                                    style={{ elevation: 2, shadowColor: '#000', shadowOpacity: 0.1, shadowRadius: 5, shadowOffset: { width: 0, height: 2 }}}
+                                    onPress={() => router.push({ pathname: '/detail_trip', params: { name: item.name, location: item.location, rating: item.rating, category: item.category }})}
+                                >
                                     <Image source={{ uri: `https://picsum.photos/seed/${item.name}/200/200` }} className="w-24 h-24 rounded-2xl" />
                                     <View className="flex-1 ml-4">
                                         <Text className="text-lg font-bold">{item.name}</Text>
