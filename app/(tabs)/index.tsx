@@ -188,7 +188,7 @@ export default function Home() {
                     </View>
 
                     {/* Article */}
-                    <View className="mt-6">
+                    <View>
                         <View className="flex-row justify-between items-center mb-4">
                             <Text className="text-xl font-bold">Article</Text>
                             <TouchableOpacity>
