@@ -22,6 +22,7 @@ export default function Layout() {
           <Stack.Screen name="auth" options={{ headerShown: false }} />
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="detail_trip" options={{ headerShown: false }} />
+          <Stack.Screen name="detail_article" options={{ headerShown: false }} />
         </Stack>
       </SafeAreaProvider>
     );

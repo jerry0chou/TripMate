@@ -208,6 +208,7 @@ export default function Home() {
                                             shadowRadius: 10, 
                                             shadowOffset: { width: 0, height: 5 }
                                         }}
+                                        onPress={() => router.push({ pathname: '/detail_article', params: { name: article.title, title: article.title, date: article.date, image: article.image }})}
                                     >
                                         <Image source={{ uri: `https://picsum.photos/seed/${article.image}/400/300` }} className="w-full h-32 rounded-lg bg-gray-200" />
                                         <View className="mt-3">
