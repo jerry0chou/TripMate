@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add wishlist">
+    <list default="true" id="60383800-3a76-4654-8ad9-dbf9396ff5b5" name="Changes" comment="add notification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/notification.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/notification.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,8 @@
       <workItem from="1746392902940" duration="19651000" />
       <workItem from="1746635582431" duration="6337000" />
       <workItem from="1746910968928" duration="9466000" />
-      <workItem from="1751246913780" duration="1854000" />
+      <workItem from="1751246913780" duration="3778000" />
+      <workItem from="1753634273667" duration="4270000" />
     </task>
     <task id="LOCAL-00001" summary="remove redundancies">
       <option name="closed" value="true" />
@@ -245,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751247917830</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add notification">
+      <option name="closed" value="true" />
+      <created>1751249448843</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1751249448843</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +303,7 @@
     <MESSAGE value="add article detail page" />
     <MESSAGE value="drop margin for article card" />
     <MESSAGE value="add wishlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wishlist" />
+    <MESSAGE value="add notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notification" />
   </component>
 </project>
